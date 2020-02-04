@@ -52,7 +52,7 @@
  
         analytics.track('signup_get_started',
                         {user_nick: 'carol365'},
-                        {email :'carol365@test.com'}
+                        {context: {traits: {email :'carol365@test.com'}}}
         ); 
           
            analytics.track('destination submitted', user, function() {
