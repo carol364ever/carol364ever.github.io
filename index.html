@@ -10,10 +10,15 @@
   analytics.page();
   }}();
     
-    analytics.identify('1234', {
+    analytics.identify('1234', 
+        {
             email: 'carol', 
             name: 'cap'
-        });
+        },
+        {page: {
+            referrer: 'https://www.google.com'}
+        }             
+   );
 </script>
     
 </head> 
