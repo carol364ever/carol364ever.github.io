@@ -45,6 +45,11 @@
             destination: destination, 
             details: details
         };
+        var id = "userId" + email;  
+        analytics.identify(id, {
+            email: email, 
+            name: fullname
+        });
  
         analytics.track('signup_get_started',
                         {user_nick: 'c222arol365'},
