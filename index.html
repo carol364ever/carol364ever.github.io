@@ -45,14 +45,10 @@
             destination: destination, 
             details: details
         };
-        analytics.identify('1234', {
-            email: email, 
-            name: fullname
-        });
  
         analytics.track('signup_get_started',
-                        {user_nick: 'carol365'},
-                        {context: {traits: {email :'carol365@test.com'}}}
+                        {user_nick: 'c222arol365'},
+                        {context: {traits: {email :'11carol365@test.com'}}}
         ); 
           
            analytics.track('destination submitted', user, function() {
