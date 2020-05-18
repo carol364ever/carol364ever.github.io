@@ -8,14 +8,14 @@
   var pixelUrl = "https://api.segment.io/v1/pixel/track";
   var pixelPayload ="ew0KIndyaXRlS2V5IjogIkw2YklqbkNlQktIZzNlWmg1SDZSMEtBd3pncGwycGxEIiwNCiJ1c2VySWQiOiAibXlVc2VySWQiLA0KImV2ZW50IjogIm15RXZlbnQiLA0KInByb3BlcnRpZXMiOiB7DQoicHJvcDEiOiAicHJvcDEiDQp9DQp9";
   this.imageSrc = pixelUrl + '?data=' + pixelPayload;
-  alert(imageSrc);
-  // should be https://api.segment.io/v1/pixel/track?data=ew0KIndyaXRlS2V5IjogIkw2YklqbkNlQktIZzNlWmg1SDZSMEtBd3pncGwycGxEIiwNCiJ1c2VySWQiOiAibXlVc2VySWQiLA0KImV2ZW50IjogIm15RXZlbnQiLA0KInByb3BlcnRpZXMiOiB7DQoicHJvcDEiOiAicHJvcDEiDQp9DQp9
    </script>
    <body>
       The following image is a Segment Pixel link:<br>
-         <img id="mySegmentPixel" src="imageSrc">
+         <img id="mySegmentPixel">
    </body>
    <script>
-   alert(document.getElementById('mySegmentPixel').src);
+   document.getElementById('mySegmentPixel').src = imageSrc;
    </script>
 </html>
+
+
