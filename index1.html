@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>My Segment Pixel</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   </head>
+   <script>
+  var pixelUrl = "https://api.segment.io/v1/pixel/track";
+  var pixelPayload ="ew0KIndyaXRlS2V5IjogIkw2YklqbkNlQktIZzNlWmg1SDZSMEtBd3pncGwycGxEIiwNCiJ1c2VySWQiOiAibXlVc2VySWQiLA0KImV2ZW50IjogIm15RXZlbnQiLA0KInByb3BlcnRpZXMiOiB7DQoicHJvcDEiOiAicHJvcDEiDQp9DQp9";
+
+  // should be https://api.segment.io/v1/pixel/track?data=ew0KIndyaXRlS2V5IjogIkw2YklqbkNlQktIZzNlWmg1SDZSMEtBd3pncGwycGxEIiwNCiJ1c2VySWQiOiAibXlVc2VySWQiLA0KImV2ZW50IjogIm15RXZlbnQiLA0KInByb3BlcnRpZXMiOiB7DQoicHJvcDEiOiAicHJvcDEiDQp9DQp9
+   </script>
+   <body>
+      The following image is a Segment Pixel link:<br>
+         <img src="${pixelUrl} + '?data=' + ${pixelPayload} width=150" height="70">
+   </body>
+</html>
