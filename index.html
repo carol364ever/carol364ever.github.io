@@ -9,8 +9,7 @@
   analytics.load("HI1RebI8wvMabysVDw1ABgB2qBTJenys");
   analytics.page();
   
-  //adding debug method
-  analytics.debug();
+  //adding debug method analytics.debug();
   }}();
 </script>
     
@@ -53,14 +52,16 @@
             email: email, 
             name: fullname
         });
-        console.log("my anonymous Id is" + analytics.user().anonymousId());
-        //adding timeout method
-        analytics.timeout(200);
+        
+        // grabbing anonymousId
+        var anonId = analytics.user().anonymousId());
+        
+        // send event with anonId as a property
         analytics.track('signup_get_started',
-                        {user_nick: 'c222arol365'},
-                        {context: {traits: {email :'11carol365@test.com'}}}
+                        {anonymousId: anonId},
         ); 
           
+          //adding timeout method analytics.timeout(200);
            //analytics.track('destination submitted', user, function() {
             //window.location.href = "";
         //});
