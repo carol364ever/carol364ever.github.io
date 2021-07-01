@@ -54,12 +54,10 @@
         });
         
         // grabbing anonymousId
-        var anonId = analytics.user().anonymousId());
+        var anonId = analytics.user().anonymousId();
         
         // send event with anonId as a property
-        analytics.track('signup_get_started',
-                        {anonymousId: anonId},
-        ); 
+        analytics.track('signup_get_started',{anonymousId: anonId}); 
           
           //adding timeout method analytics.timeout(200);
            //analytics.track('destination submitted', user, function() {
